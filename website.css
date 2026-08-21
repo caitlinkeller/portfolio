@@ -282,8 +282,10 @@ a:focus {
 /* Selected Work Section */
 .work-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 2rem;
+    justify-content: start;
+    align-items: start;
 }
 
 .work-card {
@@ -293,6 +295,9 @@ a:focus {
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     border: 1px solid var(--border-light);
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .work-card:hover {
@@ -305,6 +310,8 @@ a:focus {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
     line-height: 1.3;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .work-deck {
@@ -370,8 +377,10 @@ a:focus {
 /* Projects Section (Video & Audio) */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
     gap: 2.5rem;
+    justify-content: start;
+    align-items: start;
 }
 
 .project-card {
@@ -381,6 +390,7 @@ a:focus {
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     border: 1px solid var(--border-light);
+    min-width: 0;
 }
 
 .project-card:hover {
@@ -468,6 +478,8 @@ a:focus {
     color: var(--primary-color);
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .project-description {
