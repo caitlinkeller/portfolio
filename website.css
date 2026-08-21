@@ -367,7 +367,7 @@ a:focus {
     font-size: 0.875rem;
 }
 
-/* Projects Section */
+/* Projects Section (Video & Audio) */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -391,6 +391,7 @@ a:focus {
 .project-visual {
     position: relative;
     overflow: hidden;
+    background: var(--primary-color);
 }
 
 .project-image {
@@ -402,6 +403,61 @@ a:focus {
 
 .project-card:hover .project-image {
     transform: scale(1.05);
+}
+
+/* Video embed: responsive 16:9 container so any embed code drops in cleanly */
+.video-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--primary-color);
+}
+
+.project-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Audio embed: fixed-height container that matches common Spotify/SoundCloud embed sizes */
+.audio-embed {
+    width: 100%;
+    background: var(--bg-accent);
+    display: flex;
+    align-items: center;
+}
+
+.project-audio {
+    width: 100%;
+    height: 152px;
+    border: none;
+    display: block;
+}
+
+/* Placeholder state before a real src is added, so empty embeds don't look broken */
+.video-embed:has(.project-video[src=""]),
+.audio-embed:has(.project-audio[src=""]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-embed:has(.project-video[src=""])::after,
+.audio-embed:has(.project-audio[src=""])::after {
+    content: 'Embed link goes here';
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.video-embed:has(.project-video[src=""]) .project-video,
+.audio-embed:has(.project-audio[src=""]) .project-audio {
+    display: none;
 }
 
 .project-content {
@@ -438,6 +494,7 @@ a:focus {
 
 .project-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -453,6 +510,22 @@ a:focus {
 .project-link:hover {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+/* Platform-flavored icon colors on hover for quick visual recognition */
+.project-link .fa-youtube:hover,
+.project-link:hover .fa-youtube {
+    color: #ff0000;
+}
+
+.project-link .fa-spotify:hover,
+.project-link:hover .fa-spotify {
+    color: #1db954;
+}
+
+.project-link .fa-soundcloud:hover,
+.project-link:hover .fa-soundcloud {
+    color: #ff5500;
 }
 
 /* Resume Section */
