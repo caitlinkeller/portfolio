@@ -58,7 +58,7 @@
                   <ul class="nav-list">
                       <li><a href="#about" class="nav-link">About</a></li>
                       <li><a href="#work" class="nav-link">Selected Work</a></li>
-                      <li><a href="#projects" class="nav-link">Data/Projects</a></li>
+                      <li><a href="#projects" class="nav-link">Video/Audio</a></li>
                       <li><a href="#resume" class="nav-link">Resume</a></li>
                       <li><a href="#contact" class="nav-link">Contact</a></li>
                   </ul>
@@ -188,91 +188,118 @@
           </div>
       </section>
 
-      <!-- Data/Interactive Projects Section -->
+      <!-- Video/Audio Projects Section -->
       <section id="projects" class="section projects-section">
           <div class="container">
-              <h2 class="section-title">Data & Interactive Projects</h2>
+              <h2 class="section-title">Video & Audio Projects</h2>
               <div class="projects-grid">
+
+                  <!-- Project 1: Video -->
                   <article class="project-card">
                       <div class="project-visual">
-                          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" 
-                               alt="Screenshot of interactive map showing Chicago neighborhood displacement data with color-coded regions and data tooltips" 
-                               class="project-image"
-                               width="400" 
-                               height="250">
+                          <!--
+                            EMBED YOUR VIDEO HERE.
+                            Replace the src below with your YouTube/Vimeo embed link,
+                            e.g. https://www.youtube.com/embed/VIDEO_ID
+                                 https://player.vimeo.com/video/VIDEO_ID
+                          -->
+                          <div class="video-embed">
+                              <iframe 
+                                  src="" 
+                                  title="Video project title"
+                                  class="project-video"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen
+                                  loading="lazy">
+                              </iframe>
+                          </div>
                       </div>
                       <div class="project-content">
-                          <h3 class="project-title">Chicago Displacement Tracker</h3>
-                          <p class="project-description">Interactive map visualizing gentrification patterns and resident displacement across Chicago neighborhoods using census data and machine learning algorithms.</p>
+                          <h3 class="project-title">[Video Project Title]</h3>
+                          <p class="project-description">[Describe the project: what it covers, your role (reporter/producer/editor), the reporting or production process, and why it matters.]</p>
                           <div class="project-tech">
-                              <span class="tech-tag">D3.js</span>
-                              <span class="tech-tag">Python</span>
-                              <span class="tech-tag">Census API</span>
+                              <span class="tech-tag">Video Journalism</span>
+                              <span class="tech-tag">Field Producing</span>
                           </div>
                           <div class="project-links">
-                              <a href="#" class="project-link" aria-label="View Chicago Displacement Tracker live demo">
-                                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
-                              </a>
-                              <a href="#" class="project-link" aria-label="View Chicago Displacement Tracker source code on GitHub">
-                                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                              <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="Watch full video on YouTube">
+                                  <i class="fab fa-youtube" aria-hidden="true"></i> Watch on YouTube
                               </a>
                           </div>
                       </div>
                   </article>
 
+                  <!-- Project 2: Audio/Podcast -->
                   <article class="project-card">
                       <div class="project-visual">
-                          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" 
-                               alt="Dashboard screenshot showing campaign finance data with bar charts, trend lines, and donor information tables" 
-                               class="project-image"
-                               width="400" 
-                               height="250">
+                          <!--
+                            EMBED YOUR AUDIO HERE.
+                            Option A - direct audio file:
+                              <audio controls src="path-to-file.mp3"></audio>
+                            Option B - Spotify/SoundCloud embed:
+                              <iframe src="https://open.spotify.com/embed/episode/EPISODE_ID" ...></iframe>
+                              <iframe src="https://w.soundcloud.com/player/?url=TRACK_URL" ...></iframe>
+                          -->
+                          <div class="audio-embed">
+                              <iframe
+                                  src=""
+                                  title="Audio project title"
+                                  class="project-audio"
+                                  frameborder="0"
+                                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                  loading="lazy">
+                              </iframe>
+                          </div>
                       </div>
                       <div class="project-content">
-                          <h3 class="project-title">Campaign Finance Database</h3>
-                          <p class="project-description">Searchable database of political contributions in Illinois with automated data scraping, cleaning, and visualization tools for transparency reporting.</p>
+                          <h3 class="project-title">[Podcast / Audio Project Title]</h3>
+                          <p class="project-description">[Describe the episode or audio piece: topic, guests interviewed, your role (host/producer/editor), and any notable production techniques.]</p>
                           <div class="project-tech">
-                              <span class="tech-tag">PostgreSQL</span>
-                              <span class="tech-tag">React</span>
-                              <span class="tech-tag">Web Scraping</span>
+                              <span class="tech-tag">Podcast Production</span>
+                              <span class="tech-tag">Audio Editing</span>
                           </div>
                           <div class="project-links">
-                              <a href="#" class="project-link" aria-label="View Campaign Finance Database live demo">
-                                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                              <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="Listen on Spotify">
+                                  <i class="fab fa-spotify" aria-hidden="true"></i> Listen on Spotify
                               </a>
-                              <a href="#" class="project-link" aria-label="View Campaign Finance Database methodology">
-                                  <i class="fas fa-file-alt" aria-hidden="true"></i> Methodology
+                              <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="Listen on SoundCloud">
+                                  <i class="fab fa-soundcloud" aria-hidden="true"></i> Listen on SoundCloud
                               </a>
                           </div>
                       </div>
                   </article>
 
+                  <!-- Project 3: Video -->
                   <article class="project-card">
                       <div class="project-visual">
-                          <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=250&fit=crop" 
-                               alt="News article layout showing embedded interactive charts and social media timeline integration" 
-                               class="project-image"
-                               width="400" 
-                               height="250">
+                          <div class="video-embed">
+                              <iframe 
+                                  src="" 
+                                  title="Video project title"
+                                  class="project-video"
+                                  frameborder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen
+                                  loading="lazy">
+                              </iframe>
+                          </div>
                       </div>
                       <div class="project-content">
-                          <h3 class="project-title">Social Media News Tracker</h3>
-                          <p class="project-description">Real-time monitoring tool that tracks misinformation spread across platforms during breaking news events, with automated fact-checking integration.</p>
+                          <h3 class="project-title">[Video Project Title]</h3>
+                          <p class="project-description">[Describe the project: what it covers, your role, the reporting or production process, and why it matters.]</p>
                           <div class="project-tech">
-                              <span class="tech-tag">Node.js</span>
-                              <span class="tech-tag">Twitter API</span>
-                              <span class="tech-tag">NLP</span>
+                              <span class="tech-tag">Video Editing</span>
+                              <span class="tech-tag">Documentary</span>
                           </div>
                           <div class="project-links">
-                              <a href="#" class="project-link" aria-label="View Social Media News Tracker source code on GitHub">
-                                  <i class="fab fa-github" aria-hidden="true"></i> Code
-                              </a>
-                              <a href="#" class="project-link" aria-label="Read about Social Media News Tracker methodology">
-                                  <i class="fas fa-file-alt" aria-hidden="true"></i> Case Study
+                              <a href="#" class="project-link" target="_blank" rel="noopener" aria-label="Watch full video">
+                                  <i class="fas fa-play-circle" aria-hidden="true"></i> Watch Full Video
                               </a>
                           </div>
                       </div>
                   </article>
+
               </div>
           </div>
       </section>
